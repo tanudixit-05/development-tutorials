@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" href="/favicon.ico" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="objects.js"></script>
+</head>
+<body>
+    <h1>Async programming and event loop</h1>
+    <h2> mouse pointer </h2>
+    <button> click me </button>
+    <script>
+        //select the element on which 
+        // you want to some action
+
+        //selection
+         const btn =document.querySelector("button");
+          btn.addEventListener("click",cb);
+          function cb(){
+           alert("button clicked");
+          }
+            //event listener
+          //  btn.addEventListener("click",cb);
+    </script>
+</body>
+</html>
