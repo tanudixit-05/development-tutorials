@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js for react</title>
+</head>
+<body>
+    <h1>js for react</h1>
+    <script>
+    //   function inner (){
+    //         console.log("i am inner function");
+    //     }
+    //     function outer(innerRef){
+    //         console.log("i am outer function");
+    //         innerRef();
+    //     }
+    //     outer(inner);
+
+    // let arr=[10,20,30,40,50];
+    // let new arr=[];
+    // for(let i=0;i<arr.length;i++){
+    //     newArr.push(arr[i]*2);
+    // }
+    // console.log("newarr", newArr);
+    
+    // let cubearr=[];
+    // for(let i=0;i<arr.length;i++){
+    //     cubearr.push(arr[i]**3);
+    // }
+
+    // console.log("```````````````````````````");
+    // console.log("cubearr", cubearr);
+     
+
+
+    //custom map function
+    
+    
+    
+    // function map(arr, cb){ //cb-> callback function
+    //     let newArr=[];
+    //     for(let i=0;i<arr.length;i++){
+    //      let sqValue=cb(arr[i]);
+    //      newArr.push(sqValue);
+            
+    //     }
+    //     return newArr;
+    //  }
+    //  let arr =[10,20,30,40,50];
+          
+    //      function squarer(elem){
+    //         return elem*elem;
+    //      }
+         
+    //      const sqArr=map(arr, squarer);
+    //         console.log("sqArr", sqArr);
+         
+    //    function cuber (elem){
+    //         return elem*elem*elem;
+    //      }
+    //      const cuber =map(arr, cuber);
+    //      console.log("```````````````````````````");// for better visibility
+    //      console.log("cuber", cuber);
+
+      
+    //map
+    let arr=[10 ,20 ,30 ,40 ,50];
+    function cuber (elem){
+        return elem*elem*elem;
+    }
+    function squarer(elem){
+        return elem*elem;
+     }
+
+    const cubeArr= arr.map(cuber);
+    console.log("cubeArr", cubeArr);
+    const sqArr= arr.map(squarer);
+    console.log("sqArr", sqArr);
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- react algorithm  -->
+     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+
+  <!--react dom algorithm-->
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<!--transpiler for react= translates JSX to JavaScript-->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+<body>
+    <h1> React manipulation example</h1>
+    <div id="root"></div>
+    <script type="text/babel">
+        const rootElement = document.getElementById('root');
+
+        //react.create element
+        //-> tagname,props->styling ,content
+       // const reactHeadElement=
+       // React.createElement("h1", {style:{color: "blue"}}, "Hello, React!");
+        // REACT DOM
+
+        function Heading(){
+             return <h1> hi from JSX</h1>
+        }
+        ReactDOM.render(<Heading/>, rootElement);
+
+    </script>
+</body>
+</html>
